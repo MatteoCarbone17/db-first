@@ -5,18 +5,18 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 
 Nome tabella : used cars 
 
-Targa            --------------- stringa -------- VARCHAR(7)
-Numero di telaio --------------- stringa -------- VARCHAR(255)
-Casa produttrice --------------- stringa -------- VARCHAR(255)
-Serie -------------------------- stringa --------- VARCHAR(255)
-Modello ------------------------- stringa ------- VARCHAR(255)
-Anno produzione ----------------- date  --------- DATE
-Anno di immatricolazione -------- date ---------- DATE
-Numero di kilometri ------------- intero -------- MEDIUMINT
-Prezzo uscita -------------------- intero ------- FLOAT (9,2)
-Prezzo usato --------------------- intero ------- MEDIUMINT FLOAT (9,2)
-Storico Proprietari -------------- stringa ------ TEXT
-Usura componenti ----------------- stringa ------ TEXT
-Sostituzioni componenti ---------- stringa ------ TEXT
-Storico tagliondo ---------------- stringa ------ TEXT
-Storico revisione ---------------- stringa ------ TEXT
+Targa            --------------- stringa -------- VARCHAR(7) --------- PRIMARY_KEY
+Numero di telaio --------------- stringa -------- VARCHAR(255) ------- NOTNULL ---- UNIQUE
+Casa produttrice --------------- stringa -------- VARCHAR(255)  ------ NOTNULL
+Serie -------------------------- stringa --------- VARCHAR(255) ------ NOTNULL
+Modello ------------------------- stringa ------- VARCHAR(255) ------- NULL
+Anno produzione ----------------- date  --------- DATE --------------- NULL
+Anno di immatricolazione -------- date ---------- DATE --------------- NOTNULL
+Numero di kilometri ------------- intero -------- MEDIUMINT ---------- NOTNULL
+Prezzo uscita -------------------- intero ------- FLOAT (9,2) -------- NULL
+Prezzo usato --------------------- intero ------- MEDIUMINT FLOAT (9,2) -- NOTNULL
+Storico Proprietari -------------- stringa ------ TEXT ------------------- NULL
+Usura componenti ----------------- stringa ------ TEXT ------------------- NULL
+Sostituzioni componenti ---------- stringa ------ TEXT ------------------- NULL
+Storico tagliondo ---------------- stringa ------ TEXT ------------------- NULL
+Storico revisione ---------------- stringa ------ TEXT ------------------- NULL
