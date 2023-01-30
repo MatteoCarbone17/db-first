@@ -1,0 +1,22 @@
+Descrizione:
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
+
+
+
+Nome tabella : used cars 
+
+Targa            --------------- stringa -------- VARCHAR(7)
+Numero di telaio --------------- stringa -------- VARCHAR(255)
+Casa produttrice --------------- stringa -------- VARCHAR(255)
+Serie -------------------------- stringa --------- VARCHAR(255)
+Modello ------------------------- stringa ------- VARCHAR(255)
+Anno produzione ----------------- date  --------- DATE
+Anno di immatricolazione -------- date ---------- DATE
+Numero di kilometri ------------- intero -------- MEDIUMINT
+Prezzo uscita -------------------- intero ------- FLOAT (9,2)
+Prezzo usato --------------------- intero ------- MEDIUMINT FLOAT (9,2)
+Storico Proprietari -------------- stringa ------ TEXT
+Usura componenti ----------------- stringa ------ TEXT
+Sostituzioni componenti ---------- stringa ------ TEXT
+Storico tagliondo ---------------- stringa ------ TEXT
+Storico revisione ---------------- stringa ------ TEXT
